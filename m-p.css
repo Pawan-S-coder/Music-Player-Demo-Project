@@ -1,0 +1,144 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+select {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode button {
+    background-color: #555;
+    color: white;
+}
+
+.dark-mode button:hover {
+    background-color: #777;
+}
+
+.dark-mode select {
+    border: 1px solid #555;
+}
+
+/* Song list styles */
+.all-songs {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.songItem {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.songItem img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.songItem h5 {
+    margin: 10px 0;
+}
+
+.subtitle {
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Current song styles */
+#currentSong {
+    margin: 20px;
+    text-align: center;
+}
+
+#currentSong img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+#currentSong h3, #currentSong h4 {
+    margin: 10px 0;
+}
+
+/* Playlist styles */
+#playlists {
+    margin: 20px;
+}
+
+#playlists div {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+#playlistSongs {
+    list-style: none;
+    padding: 0;
+}
+
+#playlistSongs .songItem {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
