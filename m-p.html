@@ -1,43 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-       
     <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Demo Music player  </title>
-        <!-- add link of css file with href ,provided css file link there -->
-        <link href="m-p.css" rel="stylesheet" >
-        <!-- add link for font awesome for best fonticon -->
-        <script src="https://kit.fontawesome.com/d5a67f3c5e.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="m-p.css">
 </head>
 <body>
-        <div id="heading">
-            <h3 id="main-heading">Music Player</h3>
-           <div id="button-container">
-            <button id="toggle">
-               Dark
-             </button>
-            <span id="mover"></span>
-
-           </div>
-
-        </div>
-        <div id="container">
-            <div id="all-songs-div">
-                <div id="filter-container">
-                    <h3 id="genre">Filter by Genre</h3>
-                    <select id="option">
-                        <option >Hip hop</option>
-                        <option>Classic</option>
-                        <option selected>Rock</option>
+    <button id="toggle">Toggle Theme</button>
+    <select id="genreSelect">
+        <option value="all">All Songs</option>
+        <option value="Rock">Rock</option>
+        <option value="Pop">Pop</option>
+        <option value="Hip-hop">Hip-hop</option>
+        <option value="Classic">Classic</option>
     </select>
     <ul class="all-songs" id="allSongs"></ul>
     <div id="currentSong">
         <img id="currentSongImg" src="" alt="">
         <h3 id="currentSongName"></h3>
         <h4 id="currentSongArtist"></h4>
-        <button onclick="previousSong()">Previous</button>
-        <button onclick="nextSong()">Next</button>
+        <button id="prev">Previous</button>
+        <button id="nextSong">Next</button>
         <button onclick="addToPlaylist()">Add to Playlist</button>
     </div>
     <div id="playlists"></div>
@@ -45,11 +29,3 @@
     <script src="m-p.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-

@@ -8,6 +8,7 @@ const songs = [
 ];
 
 document.addEventListener('DOMContentLoaded',()=>{
+   
     function toggleTheme() {
         document.body.classList.toggle('dark-mode');
     }
@@ -58,12 +59,16 @@ function renderCurrentSong(id) {
 function previousSong() {
     currentIndex = (currentIndex - 1 + songs.length) % songs.length;
     renderCurrentSong(songs[currentIndex].id);
+    audio.play();
 }
+document.getElementById('prev').addEventListener('click',previousSong);
 
 function nextSong() {
     currentIndex = (currentIndex + 1) % songs.length;
     renderCurrentSong(songs[currentIndex].id);
+    audio.play();
 }
+document.getElementById('nextSong').addEventListener('click',nextSong);
 
 //  add to the playlist function
 let playlist = [];
